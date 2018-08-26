@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D7FE3F321325A810046B503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE3F221325A810046B503 /* AppDelegate.swift */; };
+		7D7FE3F521325A810046B503 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE3F421325A810046B503 /* MainViewController.swift */; };
+		7D7FE3FA21325A810046B503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7FE3F921325A810046B503 /* Assets.xcassets */; };
+		7D7FE3FD21325A810046B503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7FE3FB21325A810046B503 /* LaunchScreen.storyboard */; };
+		7D7FE40821325A820046B503 /* WanAndroid_iOS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE40721325A820046B503 /* WanAndroid_iOS_AppTests.swift */; };
+		7D7FE41321325A820046B503 /* WanAndroid_iOS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE41221325A820046B503 /* WanAndroid_iOS_AppUITests.swift */; };
+		7D7FE42721325B980046B503 /* KnowledgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE42621325B980046B503 /* KnowledgeVC.swift */; };
+		7D7FE42C21325BF00046B503 /* HotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE42B21325BF00046B503 /* HotVC.swift */; };
+		7D7FE43121325C460046B503 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE43021325C460046B503 /* HomeVC.swift */; };
+		93BB5A1788057CBECFD5D387 /* Pods_WanAndroid_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C6367CE902FB313F860103 /* Pods_WanAndroid_iOS_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D7FE40421325A820046B503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D7FE3E721325A810046B503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D7FE3EE21325A810046B503;
+			remoteInfo = "WanAndroid-iOS-App";
+		};
+		7D7FE40F21325A820046B503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D7FE3E721325A810046B503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D7FE3EE21325A810046B503;
+			remoteInfo = "WanAndroid-iOS-App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31C6367CE902FB313F860103 /* Pods_WanAndroid_iOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanAndroid_iOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		725C03BD6A2A2763DE2593E4 /* Pods-WanAndroid-iOS-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanAndroid-iOS-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanAndroid-iOS-App/Pods-WanAndroid-iOS-App.release.xcconfig"; sourceTree = "<group>"; };
+		7D7FE3EF21325A810046B503 /* WanAndroid-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WanAndroid-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7FE3F221325A810046B503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D7FE3F421325A810046B503 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		7D7FE3F921325A810046B503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D7FE3FC21325A810046B503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D7FE3FE21325A810046B503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D7FE40321325A820046B503 /* WanAndroid-iOS-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WanAndroid-iOS-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7FE40721325A820046B503 /* WanAndroid_iOS_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanAndroid_iOS_AppTests.swift; sourceTree = "<group>"; };
+		7D7FE40921325A820046B503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D7FE40E21325A820046B503 /* WanAndroid-iOS-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WanAndroid-iOS-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7FE41221325A820046B503 /* WanAndroid_iOS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanAndroid_iOS_AppUITests.swift; sourceTree = "<group>"; };
+		7D7FE41421325A820046B503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D7FE42621325B980046B503 /* KnowledgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeVC.swift; sourceTree = "<group>"; };
+		7D7FE42B21325BF00046B503 /* HotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotVC.swift; sourceTree = "<group>"; };
+		7D7FE43021325C460046B503 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A043A6608BB2765FADF85600 /* Pods-WanAndroid-iOS-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanAndroid-iOS-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanAndroid-iOS-App/Pods-WanAndroid-iOS-App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D7FE3EC21325A810046B503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BB5A1788057CBECFD5D387 /* Pods_WanAndroid_iOS_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7FE40021325A820046B503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7FE40B21325A820046B503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2470BA9F057236BF12A4F78B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31C6367CE902FB313F860103 /* Pods_WanAndroid_iOS_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D7FE3E621325A810046B503 = {
+			isa = PBXGroup;
+			children = (
+				7D7FE3F121325A810046B503 /* WanAndroid-iOS-App */,
+				7D7FE40621325A820046B503 /* WanAndroid-iOS-AppTests */,
+				7D7FE41121325A820046B503 /* WanAndroid-iOS-AppUITests */,
+				7D7FE3F021325A810046B503 /* Products */,
+				CE92CEF12A484A1F84C1EFAD /* Pods */,
+				2470BA9F057236BF12A4F78B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7D7FE3F021325A810046B503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE3EF21325A810046B503 /* WanAndroid-iOS-App.app */,
+				7D7FE40321325A820046B503 /* WanAndroid-iOS-AppTests.xctest */,
+				7D7FE40E21325A820046B503 /* WanAndroid-iOS-AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D7FE3F121325A810046B503 /* WanAndroid-iOS-App */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE42221325B420046B503 /* Knowledge */,
+				7D7FE42121325B3C0046B503 /* Hot */,
+				7D7FE42021325B220046B503 /* Home */,
+				7D7FE3F221325A810046B503 /* AppDelegate.swift */,
+				7D7FE3F421325A810046B503 /* MainViewController.swift */,
+				7D7FE3F921325A810046B503 /* Assets.xcassets */,
+				7D7FE3FB21325A810046B503 /* LaunchScreen.storyboard */,
+				7D7FE3FE21325A810046B503 /* Info.plist */,
+			);
+			path = "WanAndroid-iOS-App";
+			sourceTree = "<group>";
+		};
+		7D7FE40621325A820046B503 /* WanAndroid-iOS-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE40721325A820046B503 /* WanAndroid_iOS_AppTests.swift */,
+				7D7FE40921325A820046B503 /* Info.plist */,
+			);
+			path = "WanAndroid-iOS-AppTests";
+			sourceTree = "<group>";
+		};
+		7D7FE41121325A820046B503 /* WanAndroid-iOS-AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE41221325A820046B503 /* WanAndroid_iOS_AppUITests.swift */,
+				7D7FE41421325A820046B503 /* Info.plist */,
+			);
+			path = "WanAndroid-iOS-AppUITests";
+			sourceTree = "<group>";
+		};
+		7D7FE42021325B220046B503 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE42F21325C2D0046B503 /* Model */,
+				7D7FE42E21325C280046B503 /* View */,
+				7D7FE42D21325C1F0046B503 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7D7FE42121325B3C0046B503 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE42A21325BE40046B503 /* Model */,
+				7D7FE42921325BE00046B503 /* View */,
+				7D7FE42821325BD50046B503 /* Controller */,
+			);
+			path = Hot;
+			sourceTree = "<group>";
+		};
+		7D7FE42221325B420046B503 /* Knowledge */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE42521325B6E0046B503 /* Model */,
+				7D7FE42421325B660046B503 /* View */,
+				7D7FE42321325B550046B503 /* Controller */,
+			);
+			path = Knowledge;
+			sourceTree = "<group>";
+		};
+		7D7FE42321325B550046B503 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE42621325B980046B503 /* KnowledgeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D7FE42421325B660046B503 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D7FE42521325B6E0046B503 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D7FE42821325BD50046B503 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE42B21325BF00046B503 /* HotVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D7FE42921325BE00046B503 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D7FE42A21325BE40046B503 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D7FE42D21325C1F0046B503 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE43021325C460046B503 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D7FE42E21325C280046B503 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D7FE42F21325C2D0046B503 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE92CEF12A484A1F84C1EFAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A043A6608BB2765FADF85600 /* Pods-WanAndroid-iOS-App.debug.xcconfig */,
+				725C03BD6A2A2763DE2593E4 /* Pods-WanAndroid-iOS-App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D7FE3EE21325A810046B503 /* WanAndroid-iOS-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D7FE41721325A820046B503 /* Build configuration list for PBXNativeTarget "WanAndroid-iOS-App" */;
+			buildPhases = (
+				8017B232B9F7C9486C4AB759 /* [CP] Check Pods Manifest.lock */,
+				7D7FE3EB21325A810046B503 /* Sources */,
+				7D7FE3EC21325A810046B503 /* Frameworks */,
+				7D7FE3ED21325A810046B503 /* Resources */,
+				6DBE5D61ED390D988EE94433 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WanAndroid-iOS-App";
+			productName = "WanAndroid-iOS-App";
+			productReference = 7D7FE3EF21325A810046B503 /* WanAndroid-iOS-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D7FE40221325A820046B503 /* WanAndroid-iOS-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D7FE41A21325A820046B503 /* Build configuration list for PBXNativeTarget "WanAndroid-iOS-AppTests" */;
+			buildPhases = (
+				7D7FE3FF21325A820046B503 /* Sources */,
+				7D7FE40021325A820046B503 /* Frameworks */,
+				7D7FE40121325A820046B503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D7FE40521325A820046B503 /* PBXTargetDependency */,
+			);
+			name = "WanAndroid-iOS-AppTests";
+			productName = "WanAndroid-iOS-AppTests";
+			productReference = 7D7FE40321325A820046B503 /* WanAndroid-iOS-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D7FE40D21325A820046B503 /* WanAndroid-iOS-AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D7FE41D21325A820046B503 /* Build configuration list for PBXNativeTarget "WanAndroid-iOS-AppUITests" */;
+			buildPhases = (
+				7D7FE40A21325A820046B503 /* Sources */,
+				7D7FE40B21325A820046B503 /* Frameworks */,
+				7D7FE40C21325A820046B503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D7FE41021325A820046B503 /* PBXTargetDependency */,
+			);
+			name = "WanAndroid-iOS-AppUITests";
+			productName = "WanAndroid-iOS-AppUITests";
+			productReference = 7D7FE40E21325A820046B503 /* WanAndroid-iOS-AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D7FE3E721325A810046B503 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = WeponYan;
+				TargetAttributes = {
+					7D7FE3EE21325A810046B503 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7D7FE40221325A820046B503 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D7FE3EE21325A810046B503;
+					};
+					7D7FE40D21325A820046B503 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D7FE3EE21325A810046B503;
+					};
+				};
+			};
+			buildConfigurationList = 7D7FE3EA21325A810046B503 /* Build configuration list for PBXProject "WanAndroid-iOS-App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D7FE3E621325A810046B503;
+			productRefGroup = 7D7FE3F021325A810046B503 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D7FE3EE21325A810046B503 /* WanAndroid-iOS-App */,
+				7D7FE40221325A820046B503 /* WanAndroid-iOS-AppTests */,
+				7D7FE40D21325A820046B503 /* WanAndroid-iOS-AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D7FE3ED21325A810046B503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7FE3FD21325A810046B503 /* LaunchScreen.storyboard in Resources */,
+				7D7FE3FA21325A810046B503 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7FE40121325A820046B503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7FE40C21325A820046B503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DBE5D61ED390D988EE94433 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WanAndroid-iOS-App/Pods-WanAndroid-iOS-App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanAndroid-iOS-App/Pods-WanAndroid-iOS-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8017B232B9F7C9486C4AB759 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WanAndroid-iOS-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D7FE3EB21325A810046B503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7FE42721325B980046B503 /* KnowledgeVC.swift in Sources */,
+				7D7FE43121325C460046B503 /* HomeVC.swift in Sources */,
+				7D7FE3F521325A810046B503 /* MainViewController.swift in Sources */,
+				7D7FE42C21325BF00046B503 /* HotVC.swift in Sources */,
+				7D7FE3F321325A810046B503 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7FE3FF21325A820046B503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7FE40821325A820046B503 /* WanAndroid_iOS_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7FE40A21325A820046B503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7FE41321325A820046B503 /* WanAndroid_iOS_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D7FE40521325A820046B503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D7FE3EE21325A810046B503 /* WanAndroid-iOS-App */;
+			targetProxy = 7D7FE40421325A820046B503 /* PBXContainerItemProxy */;
+		};
+		7D7FE41021325A820046B503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D7FE3EE21325A810046B503 /* WanAndroid-iOS-App */;
+			targetProxy = 7D7FE40F21325A820046B503 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D7FE3FB21325A810046B503 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D7FE3FC21325A810046B503 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D7FE41521325A820046B503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D7FE41621325A820046B503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D7FE41821325A820046B503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A043A6608BB2765FADF85600 /* Pods-WanAndroid-iOS-App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CG2732DD5;
+				INFOPLIST_FILE = "WanAndroid-iOS-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wepon.WanAndroid-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D7FE41921325A820046B503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 725C03BD6A2A2763DE2593E4 /* Pods-WanAndroid-iOS-App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CG2732DD5;
+				INFOPLIST_FILE = "WanAndroid-iOS-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wepon.WanAndroid-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7D7FE41B21325A820046B503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CG2732DD5;
+				INFOPLIST_FILE = "WanAndroid-iOS-AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wepon.WanAndroid-iOS-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanAndroid-iOS-App.app/WanAndroid-iOS-App";
+			};
+			name = Debug;
+		};
+		7D7FE41C21325A820046B503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CG2732DD5;
+				INFOPLIST_FILE = "WanAndroid-iOS-AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wepon.WanAndroid-iOS-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanAndroid-iOS-App.app/WanAndroid-iOS-App";
+			};
+			name = Release;
+		};
+		7D7FE41E21325A820046B503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CG2732DD5;
+				INFOPLIST_FILE = "WanAndroid-iOS-AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wepon.WanAndroid-iOS-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WanAndroid-iOS-App";
+			};
+			name = Debug;
+		};
+		7D7FE41F21325A820046B503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CG2732DD5;
+				INFOPLIST_FILE = "WanAndroid-iOS-AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wepon.WanAndroid-iOS-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WanAndroid-iOS-App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D7FE3EA21325A810046B503 /* Build configuration list for PBXProject "WanAndroid-iOS-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D7FE41521325A820046B503 /* Debug */,
+				7D7FE41621325A820046B503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D7FE41721325A820046B503 /* Build configuration list for PBXNativeTarget "WanAndroid-iOS-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D7FE41821325A820046B503 /* Debug */,
+				7D7FE41921325A820046B503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D7FE41A21325A820046B503 /* Build configuration list for PBXNativeTarget "WanAndroid-iOS-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D7FE41B21325A820046B503 /* Debug */,
+				7D7FE41C21325A820046B503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D7FE41D21325A820046B503 /* Build configuration list for PBXNativeTarget "WanAndroid-iOS-AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D7FE41E21325A820046B503 /* Debug */,
+				7D7FE41F21325A820046B503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D7FE3E721325A810046B503 /* Project object */;
+}
