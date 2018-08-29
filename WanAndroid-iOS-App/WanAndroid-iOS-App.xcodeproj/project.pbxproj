@@ -16,6 +16,9 @@
 		7D7FE42721325B980046B503 /* KnowledgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE42621325B980046B503 /* KnowledgeVC.swift */; };
 		7D7FE42C21325BF00046B503 /* HotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE42B21325BF00046B503 /* HotVC.swift */; };
 		7D7FE43121325C460046B503 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE43021325C460046B503 /* HomeVC.swift */; };
+		7D7FE43321339DE00046B503 /* HomeArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7FE43221339DE00046B503 /* HomeArticleCell.xib */; };
+		7D7FE43521339DF40046B503 /* HomeArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE43421339DF40046B503 /* HomeArticleCell.swift */; };
+		7D7FE4382133ECDC0046B503 /* HttpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE4372133ECDC0046B503 /* HttpUtils.swift */; };
 		93BB5A1788057CBECFD5D387 /* Pods_WanAndroid_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C6367CE902FB313F860103 /* Pods_WanAndroid_iOS_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		7D7FE42621325B980046B503 /* KnowledgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeVC.swift; sourceTree = "<group>"; };
 		7D7FE42B21325BF00046B503 /* HotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotVC.swift; sourceTree = "<group>"; };
 		7D7FE43021325C460046B503 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		7D7FE43221339DE00046B503 /* HomeArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeArticleCell.xib; sourceTree = "<group>"; };
+		7D7FE43421339DF40046B503 /* HomeArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArticleCell.swift; sourceTree = "<group>"; };
+		7D7FE4372133ECDC0046B503 /* HttpUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtils.swift; sourceTree = "<group>"; };
 		A043A6608BB2765FADF85600 /* Pods-WanAndroid-iOS-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanAndroid-iOS-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanAndroid-iOS-App/Pods-WanAndroid-iOS-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +97,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D793FD821364DAD0069DDB0 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				7D793FDB21364DC10069DDB0 /* Model */,
+				7D793FDA21364DBC0069DDB0 /* View */,
+				7D793FD921364DB30069DDB0 /* Controller */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		7D793FD921364DB30069DDB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D793FDA21364DBC0069DDB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D793FDB21364DC10069DDB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7D7FE3E621325A810046B503 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +153,8 @@
 		7D7FE3F121325A810046B503 /* WanAndroid-iOS-App */ = {
 			isa = PBXGroup;
 			children = (
+				7D793FD821364DAD0069DDB0 /* My */,
+				7D7FE4362133ECBE0046B503 /* Tools */,
 				7D7FE42221325B420046B503 /* Knowledge */,
 				7D7FE42121325B3C0046B503 /* Hot */,
 				7D7FE42021325B220046B503 /* Home */,
@@ -231,6 +270,8 @@
 		7D7FE42E21325C280046B503 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7D7FE43221339DE00046B503 /* HomeArticleCell.xib */,
+				7D7FE43421339DF40046B503 /* HomeArticleCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,6 +281,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7D7FE4362133ECBE0046B503 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FE4372133ECDC0046B503 /* HttpUtils.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		CE92CEF12A484A1F84C1EFAD /* Pods */ = {
@@ -361,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7FE3FD21325A810046B503 /* LaunchScreen.storyboard in Resources */,
+				7D7FE43321339DE00046B503 /* HomeArticleCell.xib in Resources */,
 				7D7FE3FA21325A810046B503 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,7 +475,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7FE4382133ECDC0046B503 /* HttpUtils.swift in Sources */,
 				7D7FE42721325B980046B503 /* KnowledgeVC.swift in Sources */,
+				7D7FE43521339DF40046B503 /* HomeArticleCell.swift in Sources */,
 				7D7FE43121325C460046B503 /* HomeVC.swift in Sources */,
 				7D7FE3F521325A810046B503 /* MainViewController.swift in Sources */,
 				7D7FE42C21325BF00046B503 /* HotVC.swift in Sources */,
