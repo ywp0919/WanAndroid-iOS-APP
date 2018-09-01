@@ -12,13 +12,12 @@ class MainViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 设置tab文字颜色
         
         // Do any additional setup after loading the view, typically from a nib.
         createTabs();
         
         // 这样设置就有效果了。 但是看到源码注释的意思是针对整个TabBar的设置的  - -!
-        UITabBar.appearance().tintColor = UIColor.green;
+        UITabBar.appearance().tintColor = COLOR_TEXT_GREEN
         
         
         //        UITabBarItem.appearance().setTitleTextAttributes(NSDictionary(), for:UIControlState.normal);
@@ -57,9 +56,21 @@ class MainViewController: UITabBarController {
             #imageLiteral(resourceName: "icon_bottom_hot_checked").withRenderingMode(UIImageRenderingMode.alwaysOriginal));
         let hotNVC = UINavigationController(rootViewController: hotVC);
         
+        // 我的
+        let myVC = MyVC()
+        myVC.tabBarItem = UITabBarItem(title: "我的", image:
+            #imageLiteral(resourceName: "icon_bottom_my_nor").withRenderingMode(.alwaysOriginal), selectedImage:
+            #imageLiteral(resourceName: "icon_bottom_my_checked").withRenderingMode(.alwaysOriginal))
+        let myNVC = UINavigationController(rootViewController: myVC)
         
-        self.viewControllers = [homeNVC, knowledgeNVC, hotNVC];
+        
+//        self.viewControllers = [homeNVC, knowledgeNVC, hotNVC, myNVC];
+        
+        self.viewControllers = [homeVC, knowledgeVC, hotVC, myVC];
     }
+    
+
+    
     
     
 }

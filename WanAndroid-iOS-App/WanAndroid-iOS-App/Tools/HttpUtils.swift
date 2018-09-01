@@ -16,12 +16,19 @@ enum MethodType {
 
 class HttpUtils {
 
-    class func requestData(urlString : String , type : MethodType , params : [String : Any]? = nil ,
+    class func requestData(saveCookie : Bool = false, urlString : String , type : MethodType , params : [String : Any]? = nil ,
                            callBack : @escaping (_ result : Any?) -> ()){
         
         let method = type == .get ? HTTPMethod.get : HTTPMethod.post
         
-        Alamofire.request(urlString, method: method, parameters: params).responseJSON { (response) in
+        // cookie 设置
+        let cookie = (UIApplication.shared.delegate as? AppDelegate)?.cookie
+        let headers: HTTPHeaders = [
+            "Cookie": cookie == nil ? "" : cookie!
+        ]
+
+
+        Alamofire.request(urlString, method: method, parameters: params ,encoding: URLEncoding.default, headers: headers).responseJSON { (response) in
             // 1.校验是否有结果
 
 //             if let result = response.result.value {
@@ -35,6 +42,19 @@ class HttpUtils {
                 callBack(nil)
                 print("请求失败\(response.result.error)")
                 return
+            }
+            
+            if(saveCookie){
+                // 保存cookie
+                // 取出cookie
+                let responseCookie = response.response?.allHeaderFields["Set-Cookie"] as? String
+                if(responseCookie?.contains("loginUserName") == true){
+                    // 二次确认是否有账号信息。
+                    print("返回的cookie:\(responseCookie)")
+                    (UIApplication.shared.delegate as? AppDelegate)?.cookie = responseCookie
+                    UserDefaults.standard.set(responseCookie, forKey: UserDefault_AppCookie)
+                }
+                
             }
             
             // 2.将结果回调出去

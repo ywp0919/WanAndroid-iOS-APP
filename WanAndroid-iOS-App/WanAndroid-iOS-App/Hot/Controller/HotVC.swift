@@ -13,6 +13,11 @@ class HotVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        self.navigationItem.title = "热门";
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.parent?.navigationItem.title = "热门";
     }
 }
+

@@ -1,20 +1,16 @@
-
 //
-//  HomeVC.swift
+//  MyCollectArticleVCTableViewController.swift
 //  WanAndroid-iOS-App
 //
-//  Created by WeponYan on 2018/8/26.
+//  Created by WeponYan on 2018/8/31.
 //  Copyright © 2018年 WeponYan. All rights reserved.
 //
 
 import UIKit
-import Alamofire
 
+// 这个页面完全复用首页的文章页面，只有接口的修改，和取消收藏的判断逻辑的修改。
+class MyCollectArticleVC: UITableViewController {
 
-
-// 这里用UITableViewController  为了使用自带的下拉刷新
-class HomeVC: UITableViewController{
-    
     // 首页文章列表数据
     var mArticleData : [AnyObject]?
     //    var tableView : UITableView?
@@ -31,15 +27,12 @@ class HomeVC: UITableViewController{
     // 判断是否在请求中。
     var mIsRequesting = false
     
-    override func viewDidAppear(_ animated: Bool) {
-        // 设置 title
-        self.parent?.navigationItem.title = "主页";
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad();
         
-
+        // 设置 title
+        self.navigationItem.title = "我喜欢的文章";
         
         //        // 生成 TableView
         //        self.tableView = UITableView.init(frame: self.view.bounds)
@@ -116,29 +109,36 @@ class HomeVC: UITableViewController{
     }
     
     // 改变收藏状态  注意这里的sender是拿到的UITapGestureRecognizer  再通过它拿view再拿tag
+    // 这里
     @objc func changeCollectStatu(_ sender : UITapGestureRecognizer){
         let index = sender.view!.tag as Int
         
         let itemData = mArticleData?[index] as? [String : AnyObject]
-        let star = itemData?["collect"] as? Bool ?? false
-        
+        let star = itemData?["collect"] as? Bool
+    
         let id = itemData?["id"] as? Int ?? 0
         
-        print(id)
-        if(star){
-            // 去取消收藏
-            // http://www.wanandroid.com/lg/uncollect_originId/2333/json
-            //            方法：POST
-            //            id:拼接在链接上
-            removeArticleCollect(id, index: index)
-        }
-        else{
-            // 去添加收藏
-            // http://www.wanandroid.com/lg/collect/1165/json
-            //            方法：POST
-            //            参数： 文章id，拼接在链接中。
-            addArticleCollect(id, index: index)
-        }
+        // 我的收藏列表的数据里面根本就没有这个coolect字段，直接触发取消就行了。
+        removeArticleCollect(id, index: index)
+        
+        
+//
+//        print(id)
+//        if(star){
+////            http://www.wanandroid.com/lg/uncollect/2805/json
+////            方法：POST
+////            参数：
+////            id:拼接在链接上
+////            originId:列表页下发，无则为-1
+//            removeArticleCollect(id, index: index)
+//        }
+//        else{
+//            // 去添加收藏
+//            // http://www.wanandroid.com/lg/collect/1165/json
+//            //            方法：POST
+//            //            参数： 文章id，拼接在链接中。
+//            addArticleCollect(id, index: index)
+//        }
         
     }
     
@@ -187,7 +187,7 @@ class HomeVC: UITableViewController{
 }
 
 // 网络请求
-extension HomeVC {
+extension MyCollectArticleVC {
     // 获取数据
     @objc func getHomeArticleData(_ loadMore : Bool = false){
         
@@ -201,7 +201,7 @@ extension HomeVC {
             footView?.text = "正在加载中...."
         }
         print("加载数据\(loadMore) \(mPage)")
-        HttpUtils.requestData(urlString: "http://www.wanandroid.com/article/list/\(mPage)/json", type: MethodType.get, callBack: {(value) in
+        HttpUtils.requestData(urlString: "http://www.wanandroid.com/lg/collect/list/\(mPage)/json", type: MethodType.get, callBack: {(value) in
             
             self.mIsRequesting = false
             
@@ -249,18 +249,29 @@ extension HomeVC {
         })
     }
     
-    // 取消收藏  http://www.wanandroid.com/lg/uncollect_originId/2333/json
+    // 取消收藏 http://www.wanandroid.com/lg/uncollect/2805/json
+//    方法：POST
+//    参数：
+//    id:拼接在链接上
+//    originId:列表页下发，无则为-1
     func removeArticleCollect(_ id : Int, index : Int){
-        let url = "http://www.wanandroid.com/lg/uncollect_originId/\(id)/json"
         
-        HttpUtils.requestData(urlString: url, type: .post) { (value) in
+        let url = "http://www.wanandroid.com/lg/uncollect/\(id)/json"
+//        originId
+        let originId = (mArticleData?[index] as? [String : Any])?["originId"]
+        let params = ["originId" : originId]
+        
+        HttpUtils.requestData(urlString: url, type: .post, params:params) { (value) in
             if let value = value {
                 let value = value as? [String : Any]
                 if((value!["errorCode"] as! Int) == 0){
                     // 成功
-                    var itemData = self.mArticleData?[index] as? [String : Any]
-                    itemData!["collect"] = false
-                    self.mArticleData?[index] = itemData as AnyObject
+//                    var itemData = self.mArticleData?[index] as? [String : Any]
+//                    itemData!["collect"] = false
+//                    self.mArticleData?[index] = itemData as AnyObject
+                    
+                    // 这里的成功是直接把这条数据给删除掉了，不需要改变状态了。
+                    self.mArticleData?.remove(at: index)
                     self.tableView.reloadData()
                 }else {
                     // 失败
@@ -275,7 +286,7 @@ extension HomeVC {
     // 添加收藏            // http://www.wanandroid.com/lg/collect/1165/json
     func addArticleCollect(_ id : Int, index : Int){
         let url = "http://www.wanandroid.com/lg/collect/\(id)/json"
-
+        
         HttpUtils.requestData(urlString: url, type: .post) { (value) in
             if let value = value {
                 let value = value as? [String : Any]
@@ -294,6 +305,5 @@ extension HomeVC {
             }
         }
     }
-    
-}
 
+}

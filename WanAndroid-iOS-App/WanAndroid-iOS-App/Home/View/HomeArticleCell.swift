@@ -8,26 +8,37 @@
 
 import UIKit
 
-// cell view   md xid 真的难玩，好恶心，手打代码算了。
+// cell view
 class HomeArticleCell: UITableViewCell {
     
     @IBOutlet weak var labelAuthor: UILabel!
     @IBOutlet weak var labelType: UILabel!
     @IBOutlet weak var labelTitle: UILabel!
-
+    @IBOutlet weak var imageStar: UIImageView!
     
     // 没做模型转换了，先这样取出来实现一下。
     var itemData:Dictionary<String,AnyObject>? {
         didSet {
             
             labelAuthor.text = itemData?["author"] as? String
-            labelTitle.text = (itemData?["title"] as! String) 
+            labelTitle.text = (itemData?["title"] as! String)
             labelType.text = itemData?["superChapterName"] as? String
-  
+            
+            let star = itemData?["collect"] as? Bool
+            
+            // 我的收藏列表里面的数据没有这个字段，先以这种方式区分一下了。
+            if(star == nil){
+                imageStar.image = #imageLiteral(resourceName: "icon_collect_yes")
+            }else{
+                
+                imageStar.image = star == true ? #imageLiteral(resourceName: "icon_collect_yes") : #imageLiteral(resourceName: "icon_collect_no")
+            }
+            
+            
         }
     }
     
-
-    
 }
+
+
 
