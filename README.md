@@ -10,9 +10,9 @@ Swift版本的WanAndroidApp
 [Flutter版本的WanAndroidApp](https://github.com/ywp0919/wan_android_flutter)
 
 ### 使用的第三方框架
-pod 'Alamofire', '~> 4.7'
-pod 'SnapKit', '~> 4.0.0'
-pod 'Tabman', '~> 1.0'
+ - pod 'Alamofire', '~> 4.7'
+ - pod 'SnapKit', '~> 4.0.0'
+ - pod 'Tabman', '~> 1.0'
 
 ### 已完成的Wan Android Api和项目功能
  - 用户登录注册
