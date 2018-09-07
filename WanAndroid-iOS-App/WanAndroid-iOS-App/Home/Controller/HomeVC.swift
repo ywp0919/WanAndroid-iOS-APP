@@ -152,6 +152,7 @@ class HomeVC: UITableViewController{
         var item = mArticleData?[indexPath.row] as? Dictionary<String,AnyObject>
         targetVC.title = item?["title"] as? String
         targetVC.url = item?["link"] as? String
+        targetVC.isCollect = (item?["collect"] as? Bool ) ?? false
         
         //        let targetNVC = UINavigationController.init(rootViewController: targetVC)
         

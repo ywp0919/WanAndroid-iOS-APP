@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 取出保存的cookie
         cookie = UserDefaults.standard.string(forKey: UserDefault_AppCookie)
         
-        print("取到的cookie：\(cookie)")
+        print("取到的cookie：\(String(describing: cookie))")
 //        if(cookie == nil){
 //            cookie = "JSESSIONID=2FC8573F9E3E179D9C8031D215025224; Path=/; HttpOnly,loginUserName=weponYan; Expires=Fri, 28-Sep-2018 07:52:55 GMT; Path=/,loginUserPassword=12345678; Expires=Fri, 28-Sep-2018 07:52:55 GMT; Path=/,token_pass=08937b953a34ae42f65e461149b23129; Expires=Fri, 28-Sep-2018 07:52:55 GMT; Path=/"
 //            print("自动设置了一个cookie：\(cookie)")

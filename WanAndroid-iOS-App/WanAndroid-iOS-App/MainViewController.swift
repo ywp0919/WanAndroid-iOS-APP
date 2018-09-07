@@ -19,6 +19,10 @@ class MainViewController: UITabBarController {
         // 这样设置就有效果了。 但是看到源码注释的意思是针对整个TabBar的设置的  - -!
         UITabBar.appearance().tintColor = COLOR_TEXT_GREEN
         
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal),  style: .done, target: self, action: #selector(clickSearch))
+//            UIBarButtonItem.init(title: "搜索", style: .done, target: self, action: #selector(clickSearch))
+        
+       
         
         //        UITabBarItem.appearance().setTitleTextAttributes(NSDictionary(), for:UIControlState.normal);
         
@@ -26,12 +30,11 @@ class MainViewController: UITabBarController {
         //        self.tabBarController?.tabBar.tintColor = UIColor.green;
         //        self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.gray;
     }
+
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
-        
+    // 去搜索页面
+    @objc func clickSearch(){
+        self.navigationController?.pushViewController(SearchArcticleViewController(), animated: true)
     }
     
     // 创建 tabs

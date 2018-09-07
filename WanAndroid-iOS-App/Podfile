@@ -4,4 +4,6 @@ use_frameworks!
 
 target 'WanAndroid-iOS-App' do
     pod 'Alamofire', '~> 4.7'
+    pod 'SnapKit', '~> 4.0.0'
+    pod 'Tabman', '~> 1.0'
 end

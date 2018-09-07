@@ -1,16 +1,32 @@
 PODS:
   - Alamofire (4.7.0)
+  - AutoInsetter (1.2.1)
+  - Pageboy (2.4.0)
+  - SnapKit (4.0.0)
+  - Tabman (1.6.0):
+    - AutoInsetter (~> 1.2.0)
+    - Pageboy (~> 2.4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - SnapKit (~> 4.0.0)
+  - Tabman (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AutoInsetter
+    - Pageboy
+    - SnapKit
+    - Tabman
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  AutoInsetter: d90171b54341b801edd4ab68eee9eec54fdc92b7
+  Pageboy: b04cee5c1315a865fb49321129d12635e8465144
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Tabman: a9be97d1c75b4b7f40eec416021f614c4ccbb670
 
-PODFILE CHECKSUM: 076c9b7e8222703a2c5ab74d7e4f4e2d105cb55e
+PODFILE CHECKSUM: f3ea0c5829384035f7bdda3229bf58a804a9eb17
 
 COCOAPODS: 1.5.3

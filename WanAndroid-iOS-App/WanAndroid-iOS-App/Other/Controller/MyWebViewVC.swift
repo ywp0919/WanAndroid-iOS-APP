@@ -13,6 +13,7 @@ import WebKit
 class MyWebViewVC: UIViewController {
     
     var url : String?
+    var isCollect: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,10 @@ class MyWebViewVC: UIViewController {
         // Do any additional setup after loading the view.
         
         self.navigationItem.title = title ?? "网页"
+        
+        
+        // 收藏状态，这里后面再做点击事件吧
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: isCollect ? #imageLiteral(resourceName: "icon_collect_yes").withRenderingMode(.alwaysOriginal) : #imageLiteral(resourceName: "icon_collect_no").withRenderingMode(.alwaysOriginal), style: .done, target: self, action: nil)
         
         // 可以修改返回键的样式
         // self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "back", style: .plain, target: nil, action: nil)

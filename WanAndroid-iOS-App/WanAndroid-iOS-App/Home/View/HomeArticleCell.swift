@@ -21,7 +21,14 @@ class HomeArticleCell: UITableViewCell {
         didSet {
             
             labelAuthor.text = itemData?["author"] as? String
-            labelTitle.text = (itemData?["title"] as! String)
+            // 这里要处理下 搜索返回的高亮
+            var title = (itemData?["title"] as! String)
+            if(title.contains("<em")){
+                title = title.replacingOccurrences(of: "<em class='highlight'>", with: "")
+                title = title.replacingOccurrences(of: "</em>", with: "")
+            }
+            labelTitle.text = title
+            
             labelType.text = itemData?["superChapterName"] as? String
             
             let star = itemData?["collect"] as? Bool

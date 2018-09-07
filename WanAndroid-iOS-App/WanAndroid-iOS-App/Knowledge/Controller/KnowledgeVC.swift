@@ -50,7 +50,26 @@ class KnowledgeVC: UITableViewController {
     // 点击某一个
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let itemData = mData?[indexPath.row] as? [String : Any]
+        let title = itemData?["name"] as? String
         // 跳转页面
+
+        var tabTitles : [String] = []
+        var tabIds : [Int] = []
+        
+        if let childrens = itemData?["children"] as? [Any] {
+            for child in childrens {
+                let childItem = child as! [String : Any]
+                tabTitles.append(childItem["name"] as! String)
+                tabIds.append(childItem["id"] as! Int)
+            }
+        }
+        let targetVC = KnowledgeChildTabVC(tabTitles, tabIds)
+        targetVC.title  =  title
+
+
+        self.navigationController?.pushViewController(targetVC, animated: true)
     }
     
     // 一组的个数

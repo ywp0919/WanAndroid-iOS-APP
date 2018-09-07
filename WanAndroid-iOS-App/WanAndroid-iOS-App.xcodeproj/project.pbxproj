@@ -20,6 +20,8 @@
 		7D793FED2136950F0069DDB0 /* LoginOrRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D793FEB2136950F0069DDB0 /* LoginOrRegisterVC.xib */; };
 		7D793FEF2136A1060069DDB0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D793FEE2136A1060069DDB0 /* Toast.swift */; };
 		7D793FF12136AA0E0069DDB0 /* NotificationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D793FF02136AA0E0069DDB0 /* NotificationEvent.swift */; };
+		7D7F54D1214223BC001AECB2 /* HotTextLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7F54D0214223BC001AECB2 /* HotTextLabelCell.swift */; };
+		7D7F54D921426579001AECB2 /* SearchArcticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7F54D821426579001AECB2 /* SearchArcticleViewController.swift */; };
 		7D7FE3F321325A810046B503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE3F221325A810046B503 /* AppDelegate.swift */; };
 		7D7FE3F521325A810046B503 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE3F421325A810046B503 /* MainViewController.swift */; };
 		7D7FE3FA21325A810046B503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7FE3F921325A810046B503 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		7D7FE43321339DE00046B503 /* HomeArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7FE43221339DE00046B503 /* HomeArticleCell.xib */; };
 		7D7FE43521339DF40046B503 /* HomeArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE43421339DF40046B503 /* HomeArticleCell.swift */; };
 		7D7FE4382133ECDC0046B503 /* HttpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FE4372133ECDC0046B503 /* HttpUtils.swift */; };
+		7DB112E621410C770003E9CE /* KnowledgeChildTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB112E521410C770003E9CE /* KnowledgeChildTabVC.swift */; };
+		7DB112EA214129B60003E9CE /* KnowledgeChildPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB112E9214129B60003E9CE /* KnowledgeChildPageVC.swift */; };
 		93BB5A1788057CBECFD5D387 /* Pods_WanAndroid_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C6367CE902FB313F860103 /* Pods_WanAndroid_iOS_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,8 @@
 		7D793FEB2136950F0069DDB0 /* LoginOrRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginOrRegisterVC.xib; sourceTree = "<group>"; };
 		7D793FEE2136A1060069DDB0 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		7D793FF02136AA0E0069DDB0 /* NotificationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEvent.swift; sourceTree = "<group>"; };
+		7D7F54D0214223BC001AECB2 /* HotTextLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTextLabelCell.swift; sourceTree = "<group>"; };
+		7D7F54D821426579001AECB2 /* SearchArcticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArcticleViewController.swift; sourceTree = "<group>"; };
 		7D7FE3EF21325A810046B503 /* WanAndroid-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WanAndroid-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7FE3F221325A810046B503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D7FE3F421325A810046B503 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
@@ -86,6 +92,8 @@
 		7D7FE43221339DE00046B503 /* HomeArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeArticleCell.xib; sourceTree = "<group>"; };
 		7D7FE43421339DF40046B503 /* HomeArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArticleCell.swift; sourceTree = "<group>"; };
 		7D7FE4372133ECDC0046B503 /* HttpUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtils.swift; sourceTree = "<group>"; };
+		7DB112E521410C770003E9CE /* KnowledgeChildTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeChildTabVC.swift; sourceTree = "<group>"; };
+		7DB112E9214129B60003E9CE /* KnowledgeChildPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeChildPageVC.swift; sourceTree = "<group>"; };
 		A043A6608BB2765FADF85600 /* Pods-WanAndroid-iOS-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanAndroid-iOS-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanAndroid-iOS-App/Pods-WanAndroid-iOS-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +199,38 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7D7F54D4214264DF001AECB2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7D7F54D7214264F3001AECB2 /* Model */,
+				7D7F54D6214264EF001AECB2 /* View */,
+				7D7F54D5214264E9001AECB2 /* Controller */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7D7F54D5214264E9001AECB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D7F54D821426579001AECB2 /* SearchArcticleViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D7F54D6214264EF001AECB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D7F54D7214264F3001AECB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7D7FE3E621325A810046B503 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +256,7 @@
 		7D7FE3F121325A810046B503 /* WanAndroid-iOS-App */ = {
 			isa = PBXGroup;
 			children = (
+				7D7F54D4214264DF001AECB2 /* Search */,
 				7D793FDC2136539A0069DDB0 /* Other */,
 				7D793FD821364DAD0069DDB0 /* My */,
 				7D7FE4362133ECBE0046B503 /* Tools */,
@@ -252,7 +293,6 @@
 		7D7FE42021325B220046B503 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7D7FE42F21325C2D0046B503 /* Model */,
 				7D7FE42E21325C280046B503 /* View */,
 				7D7FE42D21325C1F0046B503 /* Controller */,
 			);
@@ -283,6 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				7D7FE42621325B980046B503 /* KnowledgeVC.swift */,
+				7DB112E521410C770003E9CE /* KnowledgeChildTabVC.swift */,
+				7DB112E9214129B60003E9CE /* KnowledgeChildPageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,6 +356,7 @@
 		7D7FE42921325BE00046B503 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7D7F54D0214223BC001AECB2 /* HotTextLabelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,13 +383,6 @@
 				7D7FE43421339DF40046B503 /* HomeArticleCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7D7FE42F21325C2D0046B503 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7D7FE4362133ECBE0046B503 /* Tools */ = {
@@ -514,10 +550,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WanAndroid-iOS-App/Pods-WanAndroid-iOS-App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework",
+				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoInsetter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tabman.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -551,9 +595,11 @@
 			files = (
 				7D793FEF2136A1060069DDB0 /* Toast.swift in Sources */,
 				7D7FE4382133ECDC0046B503 /* HttpUtils.swift in Sources */,
+				7DB112E621410C770003E9CE /* KnowledgeChildTabVC.swift in Sources */,
 				7D7FE42721325B980046B503 /* KnowledgeVC.swift in Sources */,
 				7D7FE43521339DF40046B503 /* HomeArticleCell.swift in Sources */,
 				7D73E7962139286A001FD5CA /* MyCollectArticleVC.swift in Sources */,
+				7DB112EA214129B60003E9CE /* KnowledgeChildPageVC.swift in Sources */,
 				7D5B14402137C96200C26DFD /* KnowledgeCell.swift in Sources */,
 				7D793FE9213685C50069DDB0 /* AppConstants.swift in Sources */,
 				7D793FF12136AA0E0069DDB0 /* NotificationEvent.swift in Sources */,
@@ -561,11 +607,13 @@
 				7D7FE43121325C460046B503 /* HomeVC.swift in Sources */,
 				7D793FEC2136950F0069DDB0 /* LoginOrRegisterVC.swift in Sources */,
 				7D793FE1213653D40069DDB0 /* MyWebViewVC.swift in Sources */,
+				7D7F54D1214223BC001AECB2 /* HotTextLabelCell.swift in Sources */,
 				7D7FE3F521325A810046B503 /* MainViewController.swift in Sources */,
 				7D7FE42C21325BF00046B503 /* HotVC.swift in Sources */,
 				7D5B14432137E05600C26DFD /* AppColors.swift in Sources */,
 				7D793FE621367A6E0069DDB0 /* MyVC.swift in Sources */,
 				7D7FE3F321325A810046B503 /* AppDelegate.swift in Sources */,
+				7D7F54D921426579001AECB2 /* SearchArcticleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
